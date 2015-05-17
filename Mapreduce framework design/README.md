@@ -84,17 +84,13 @@ sub-directories, each of which are discussed below:
 
 ## Running/testing your framework
 
-Your framework should be implemented so that the client, master, and worker servers can be run
-independently on different machines. You are encouraged to configure your framework however you like
+The framework has be implemented so that the client, master, and worker servers can be run
+independently on different machines. My main job is to configure my framework however 
 (i.e. altering the number of workers, modifying which workers store which partitions, etc.). The
 starter code does all of the work of parsing host/port/partition information into `WorkerInfo`
-objects for you, so configuring your framework in these ways should be relatively simple:
+objects for you, so I have configured my framework in these ways :
 
- * *Modifying the `master.properties` & `workers.properties` files.* For your convenience, you may
-   quickly configure your framework by modifying the `master.properties` and `workers.properties`
-   files. We have provided an example configuration to start with.
+ * *Modifying the `master.properties` & `workers.properties` files.*
 
- * *Specifying command line arguments.* This may be preferable when testing your framework on
-   multiple machines, for example. We will also post some scripts on Piazza that will make it easy
-   to simulate the process of running many different worker server instances on a single machine, so
-   stay tuned!
+ * *Specifying command line arguments.* This is good when testing my framework on
+   multiple machines,
